@@ -30,7 +30,9 @@
 
 
 #ifndef _MSC_VER
+#ifndef _GNU_SOURCE
 #define _GNU_SOURCE  /* for strndup() */
+#endif
 #include <syslog.h>
 #else
 typedef int mode_t;
